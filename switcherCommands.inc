@@ -1,0 +1,30 @@
+<?php
+$SWITCHERS = Array(
+//Jan 7 2016
+//switcher controller
+
+	
+		Array("NAME" => "IOGEAR_GHSW8141",
+
+				//have to pass 0x0D (enter key)
+
+		
+				"podon" => "pod on",
+				"podoff" => "pod off",
+				"1" => "0x73,0x77,0x20,0x69,0x30,0x31,0x0D",
+				"2" => "0x73,0x77,0x20,0x69,0x30,0x32,0x0D",
+				"3" => "0x73,0x77,0x20,0x69,0x30,0x33,0x0D",
+				"4" => "0x73,0x77,0x20,0x69,0x30,0x34,0x0D",
+				
+		
+				"BAUD_RATE" => "19200",
+				"CHAR_BITS" => "8",
+				"STOP_BITS" => "1",
+				"PARITY" => "none"
+				)
+//uncomment for an additional switcher
+//				),
+		
+
+);
+?>
