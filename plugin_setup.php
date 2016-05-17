@@ -124,7 +124,7 @@ print_r($SWITCHERS);
 <li>Configure your connection port of Serial</li>
 </ul>
 
-<form method="post" action="http://<? echo $_SERVER['SERVER_NAME'].":".$_SERVER['SERVER_PORT']?>/plugin.php?plugin=<?php echo $pluginName;?>&page=plugin_setup.php">
+<form method="post" action="http://<? echo $_SERVER['SERVER_ADDR'].":".$_SERVER['SERVER_PORT']?>/plugin.php?plugin=<?php echo $pluginName;?>&page=plugin_setup.php">
 <br>
 <p/>
 
@@ -234,7 +234,7 @@ PORT:
 
 <p>To report a bug, please file it against the <?php echo $pluginName;?> plug-in project on Git: <?php echo $gitURL;?>
 
-<form method="post" action="http://<? echo $_SERVER['SERVER_NAME'].":".$_SERVER['SERVER_PORT']?>/plugin.php?plugin=<?php echo $pluginName;?>&page=plugin_setup.php">
+<form method="post" action="http://<? echo $_SERVER['SERVER_ADDR'].":".$_SERVER['SERVER_PORT']?>/plugin.php?plugin=<?php echo $pluginName;?>&page=plugin_setup.php">
 <?
  if(file_exists($pluginUpdateFile))
  {
